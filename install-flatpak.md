@@ -1,5 +1,5 @@
+## Como instalar?
 Certifique-se de que o Flatpak está instalado: Se você ainda não tem o Flatpak instalado no seu sistema, execute o seguinte comando para instalá-lo:
-
 ```
 sudo apt update
 sudo apt install flatpak
@@ -26,8 +26,7 @@ flatpak run nome_do.aplicativo
 ```
 Se preferir, também pode usar uma loja gráfica como o GNOME Software ou KDE Discover para abrir e instalar o arquivo .flatpakref.
 
-Porque usar?
-- O Flatpak é um sistema de distribuição de software que oferece várias vantagens em comparação aos métodos tradicionais de instalação de pacotes. Aqui estão algumas razões pelas quais você pode considerar usar Flatpak:
+### Vantagens
 1. Isolamento de Aplicativos (Sandboxing)
 
     Os aplicativos Flatpak são executados em um ambiente isolado (sandbox). Isso significa que eles têm acesso limitado ao sistema, o que melhora a segurança, já que qualquer problema com o aplicativo (como malware ou bugs) é menos provável de afetar o restante do sistema.
@@ -48,17 +47,17 @@ Porque usar?
 
     Você pode atualizar todos os aplicativos Flatpak instalados no seu sistema com um único comando, o que facilita a manutenção e garante que você sempre tenha as últimas correções de bugs e de segurança:
 
-    bash
-
+    ```
     flatpak update
+    ```
 
 6. Rollback Simples
 
     O Flatpak permite reverter atualizações de aplicativos com facilidade. Se algo der errado com uma nova versão, você pode voltar rapidamente para a versão anterior do software:
 
-    bash
-
+    ```
     flatpak update --commit=<commit-id>
+    ```
 
 7. Integração com Flathub
 
@@ -76,9 +75,7 @@ Porque usar?
 
     Flatpak permite que você compartilhe bibliotecas e runtime entre diferentes aplicativos, otimizando o uso de espaço e evitando redundâncias.
 
-Desvantagens
-
-Apesar das vantagens, o Flatpak também tem alguns pontos que podem ser desvantagens:
+### Desvantagens
 - Tamanho do pacote: Como cada aplicativo traz suas dependências, os pacotes podem ser maiores em comparação com pacotes tradicionais.
 - Uso de memória: O isolamento pode resultar em um maior uso de recursos, pois cada aplicativo pode estar executando suas próprias instâncias de bibliotecas que, em um sistema tradicional, seriam compartilhadas.
 
