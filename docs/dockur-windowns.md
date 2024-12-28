@@ -31,5 +31,6 @@ services:
       - ./data:/storage/shared/```
 
 ```
+```
 sudo docker-compose
 ```
